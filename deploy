@@ -1,0 +1,3 @@
+#!/bin/sh
+SITE=$(basename "$PWD")
+rsync -4 -a --delete --exdlude .git ./ "$SITE:/var/www/$SITE/"
